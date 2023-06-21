@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap");
+
+* {
+  transition: 0.3s;
+  font-family: Noto Sans Thai;
+  /* font-family: Mitr; */
+}
+
+.bg-m1 {
+  background-color: #6e41fe !important;
+}
+.bg-m2 {
+  background-color: #e2d9ff !important;
+}
+
+.bg_dark{
+  background-color: #251653 !important;
+}
+
+.text-m1 {
+  color: #6e41fe !important;
+}
+
+.btn {
+  transition: 0.3s !important;
+}
+
+.btn:hover {
+  opacity: 0.2;
+}
+
+.zoom_sm:hover {
+  transform: scale(1.1);
+  border-radius: 10%;
+}
+.zoom_lg:hover {
+  transform: scale(2);
+  border-radius: 10%;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border-radius: 5%;
+}
+
+.email-address {
+  word-break: break-word;
+  word-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.nav-item:hover {
+  opacity: 0.2;
+}
+
+.bg_nav{
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.bg_nav_dark{
+  background: rgba(37,	22,	83, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.bg_dark_2{
+  background: rgba(51, 31, 110, 0.9);
+}
+
+/* animation */
+.shake_horizontal {
+  -webkit-animation: shake-horizontal 0.8s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+
+

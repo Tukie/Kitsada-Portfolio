@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./src/favicon.png">
+  <title>Kitsada-Portfolio</title>
+  <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34=">
+  <meta name="description" content="เว็บไซต์สะสมผลงานของนายกฤษดา บุตนาม, Kitsada Butnam Portfolio">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="google" content="sitelinkssearchbox">
+  <meta name="keywords" content="Portfolio, แฟ้มสะสมผลงาน, เว็บไซต์สะสมผลงาน">
+  <meta name="author" content="Kitsada Butnam">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./module/bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./module/fontawesome-free-6.4.0-web/css/all.min.css" />
+</head>
+
+<body class="light">
+
+
+
+  <!-- navbar -->
+  <nav class="navbar bg_nav navbar-expand-lg position-sticky sticky-top shadow-sm">
+    <div class="container-sm ">
+      <a class="navbar-brand fw-bold text-m1" href="#" id="nav_title">KITSADA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item me-3">
+            <a class="nav-link active text-dark" id="nav_home" aria-current="page" href="#home">หน้าหลัก</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active text-dark" id="nav_about" aria-current="page" href="#about">
+              เกี่ยวกับ
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active text-dark" id="nav_workExp" aria-current="page" href="#workExp">
+              ประสบการณ์
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active text-dark" id="nav_skill" aria-current="page" href="#skill">ทักษะความสามารถ
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active text-dark" id="nav_mywork" aria-current="page" href="#mywork">ผลงาน
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active text-dark" id="nav_contact" aria-current="page" href="#contact">ติดต่อ
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center">
+          <!-- EN TH -->
+          <button id="switch_en" class="btn bg-m1 rounded-5 px-4 text-light current"
+            onclick="changeLocale('en')">EN</button>
+          <button id="switch_th" class=" d-none btn bg-m1 rounded-5 px-4 text-light current"
+            onclick="changeLocale('th')">TH</button>
+
+          <!-- light / Dark -->
+          <div>
+            <button id="dark_light" class="btn btn-lg" onclick="toggleMode()" style="width: 50px;">
+              <i class="text-m1 fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  </div>
+
+
+  <!-- end navbar -->
+
+  <!-- sec1 Banner-->
+  <section id="home">
+    <div class="container-fluid light" style="height:80vh">
+      <div class="container-sm h-100">
+        <div class="d-flex justify-content-center h-100">
+          <div class="row m-0">
+            <div class="col-lg-6 text-center text-lg-start align-self-center">
+              <p class="m-0 text-secondary" id="welcome">ยินดีต้อนรับ สู่เว็บไซต์สะสมผลงาน</p>
+              <h1 class="fw-bold display-1 text-dark" id="myname" style="font-weight: 1000!important;">
+                นายกฤษดา<br>บุตนาม
+              </h1>
+
+              <a class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current" data-bs-toggle="collapse"
+                href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-download"></i>
+                <span id="resume">เรซูเม</span>
+              </a>
+              <div class="collapse mt-3" id="collapseExample">
+                <div class="">
+                  <a href="" class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current"><img src="./src/thai_flag.svg" alt="thai_flag" class="img-fluid" style="width: 25px;"> TH</a>
+                  <a href="" class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current"><img src="./src/us_flag.svg" alt="us_flag" class="img-fluid" style="width: 25px;"> EN</a>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="col-lg-6 align-self-center">
+              <img data-src="./src/profile.png" src="./src/placeholder.png" alt="profile" class="img-fluid"
+                loading="lazy" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- end sec1 Banner -->
+
+  <!-- sec2 about -->
+  <section id="about">
+    <div class="container-fluid bg-m1">
+      <div class="container-sm py-5">
+        <h1 class="fw-bold text-center text-light current" id="about_title">เกี่ยวกับ</h1>
+        <p class="text-light text-center current" id="about_detail">
+          ข้อมูลเบื้องต้นเกี่ยวกับประวัติส่วนตัวและประวัติการศึกษา</p>
+        <div class="row mt-5">
+          <div class="col-md-6 mb-4 ">
+            <div class="rounded-5 bg-light p-5">
+              <h3 class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current" id="his_title">ประวัติส่วนตัว
+              </h3>
+
+              <!-- list -->
+              <!-- item1 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="d-block">
+                  <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa-solid fa-user fs-3"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="name_last_label">ชื่อ - สกุล</h5>
+                  <p class="m-0 text-dark" id="name_last">นายกฤษดา บุตนาม</p>
+                </div>
+              </div>
+              <!-- item2 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="d-block">
+                  <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa-solid fa-location-dot fs-3"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="adress_label">ที่อยู่</h5>
+                  <p class="m-0 text-dark" id="address">52 หมู่ 8 บ.นาสิงห์ ต.นาสิงห์ อ.ศรีวิไล จ.บึงกาฬ 38210</p>
+                </div>
+              </div>
+              <!-- item3 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="fa-solid fa-phone fs-3"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="tel_label">เบอร์โทรศัพท์</h5>
+                  <p class="m-0 text-dark">061 050 1728</p>
+                </div>
+              </div>
+              <!-- item4 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="d-block">
+                  <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                    style="width: 60px; height: 60px;">
+                    <i class="fa-solid fa-envelope fs-3"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="email_label">อีเมลล์</h5>
+                  <p class="m-0 text-break text-dark">sadawutsunee.2885@gmail.com</p>
+                </div>
+              </div>
+              <!-- item5 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="fa-brands fa-line fs-3"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="line_label">ไลน์ไอดี</h5>
+                  <p class="m-0 text-dark">nookkitsada1</p>
+                </div>
+              </div>
+              <!-- item6 -->
+              <div class="d-flex align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 60px; height: 60px;">
+                  <i class="fa-solid fa-earth-americas fs-3"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="website_label">เว็บไซต์</h5>
+                  <p class="m-0 text-dark">www</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="rounded-5 bg-light p-5 h-100">
+              <h3 class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current" id="his_gradu">ประวัติการศึกษา
+              </h3>
+
+              <!-- list -->
+              <!-- item1 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 80px; height: 80px;">
+                  <i class="fa-solid fa-school fs-1"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="school_first">มัธยมศึกษาตอนต้น</h5>
+                  <p class="m-0 text-dark" id="school_name1">โรงเรียนศรีวิไลวิทยา</p>
+                  <p class="m-0 text-dark" id="school_first_grade">เกรดเฉลี่ย 3.62</p>
+                </div>
+              </div>
+              <!-- item2 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 80px; height: 80px;">
+                  <i class="fa-solid fa-school fs-1"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="school_second">มัธยมศึกษาตอนปลาย</h5>
+                  <p class="m-0 text-dark" id="school_name2">โรงเรียนศรีวิไลวิทยา</p>
+                  <p class="m-0 text-dark" id="school_second_grade">เกรดเฉลี่ย 3.53</p>
+                </div>
+              </div>
+              <!-- item3 -->
+              <div class="d-flex  align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 80px; height: 80px;">
+                  <i class="fa-solid fa-graduation-cap fs-1"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="univercity">อุดมศึกษา</h5>
+                  <p class="m-0 text-dark" id="university_name">มหาวิทยาลัยราชภัฏอุดรธานี</p>
+                  <p class="m-0 text-dark" id="university_grade">เกรดเฉลี่ย 3.85</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end sec2 about -->
+
+  <!-- sec 3 workEXP -->
+  <section id="workExp">
+    <div class="container-fluid light">
+      <div class="container-sm py-5">
+        <h1 class="fw-bold text-center text-dark" id="workEXP_title">ประสบการณ์ทำงาน</h1>
+        <p class=" text-center text-secondary" id="workEXP_detail">ข้อมูลเบื้องต้นเกี่ยวกับประวัติการทำงาน</p>
+        <div class="row mt-5">
+          <!-- img -->
+          <div class="col-md-6 mb-4 ">
+            <img data-src="./src/workExp.png" src="./src/placeholder.png" alt="workEXP" loading="lazy"
+              class="img-fluid rounded-5 overflow-hidden shadow">
+          </div>
+          <div class="col-md-6 mb-4 ">
+            <div class="rounded-5 bg-white no_dark p-5 shadow h-100">
+              <h4 class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current " id="workEXP_date">1 เมษายน
+                2565 - 17
+                มิถุนายน 2565</h4>
+
+              <!-- list -->
+              <!-- item1 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="d-block">
+                  <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                    style="width: 80px; height: 80px;">
+                    <i class="fa-solid fa-building fs-1"></i>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 fw-bold text-dark" id="work_company_name_label">ชื่อบริษัท</h5>
+                  <p class="m-0 text-dark" id="work_company_name">ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร
+                    สาขาศรีวิไล</p>
+                </div>
+              </div>
+              <!-- item2 -->
+              <div class="d-flex mb-3 align-items-center">
+                <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
+                  style="width: 80px; height: 80px;">
+                  <i class="fa-solid fa-user-tie fs-1"></i>
+                </div>
+                <div class="d-flex justify-content-center flex-column ">
+                  <h5 class="m-0 text-dark fw-bold" id="workEXP_position_label">ตำแหน่ง</h5>
+                  <p class="m-0 text-dark" id="workEXP_position">นักศึกษาฝึกงาน</p>
+
+                </div>
+              </div>
+              <p id="job_describe" class="text-dark"><span class="fw-bold ">ลักษณะงานที่ทำ : </span>งานให้บริการลูกค้า
+                เปิดบัญชี
+                ทําบัตร ATM บัตร A-GEN บัตรทอง
+                ทําแอพพลิเคชั่น A-Mobile แอพพลิเคชั่น Mobile Banking ของธนาคาร
+
+                สนับสนุนการทํางานสายงานการเงิน
+                พิมพ์เอกสาร ถ่ายเอกสาร
+                ยกกล่องเงินเพื่อนําไปเติมเข้าตู้ ATM
+
+                สนับสนุนการทํางานสายงานสินเชื่อ
+                พิมพ์ใบแจ้งหนี้ พับใบแจ้งหนี้
+                คีย์ข้อมูลทําประกัน ธ.ก.ส. ทวีรัก 99 ธ.ก.ส. มอบรัก
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- emd sec 3 workEXP -->
+
+  <!-- sec 4 skill -->
+  <section id="skill">
+    <div class="container-fluid bg-m1">
+      <div class="container-sm py-5">
+        <h1 class="fw-bold text-center text-light current" id="skill_title">ทักษะความสามารถ</h1>
+        <p class=" text-center text-light current" id="skill_detail">
+          ทักษะความสามารถที่มีและสามารถนำไปปรับใช้ในการทำงานได้
+        </p>
+        <div class="bg-light rounded-5 p-5 mt-5">
+          <div class="text-center">
+            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current" id="skill_part1">
+              ซอฟต์แวร์</h4>
+          </div>
+
+          <!-- grid -->
+          <div class="row mt-4">
+            <div class="col">
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/office.png" alt="office" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Microsoft Office</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 70%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/ps.png" alt="Photoshop" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Photoshop</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 68%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/pr.png" alt="PremirePro" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Premire Pro</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 59%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/ae.png" alt="AfterEffect" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">After Effect</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 45%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <!-- col 2 -->
+            <div class="col">
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/au.png" alt="Audition" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Audition</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 49%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/html.png" alt="HTML" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">HTML</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/css.png" alt="CSS" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">CSS</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/js.png" alt="Javascript" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Javascript</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 45%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <!-- col 3 -->
+            <div class="col">
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/canva.png" alt="Canva" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Canva</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/figma.png" alt="Figma" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Figma</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/php.png" alt="CSS" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">CSS</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 65%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+              <!-- item -->
+              <div class="d-flex mb-3 align-items-center">
+                <div
+                  class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                  style="width: 80px; height: 80px;">
+                  <img data-src="./src/skill/sql.png" alt="Sql" loading="lazy" src="./src/placeholder.png"
+                    class="img-fluid">
+                </div>
+                <div class="d-flex justify-content-center flex-column w-75">
+                  <h5 class="mb-2 fw-bold text-dark">Sql</h5>
+                  <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-m1" style="width: 45%"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- end item -->
+            </div>
+            <div class="text-center mt-4">
+              <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current" id="skill_part2">
+                ฮาร์ดแวร์
+              </h4>
+            </div>
+            <div class="row mt-4">
+              <div class="col">
+                <!-- item -->
+                <div class="d-flex mb-3 align-items-center">
+                  <div
+                    class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                    style="width: 80px; height: 80px;">
+                    <img data-src="./src/skill/pc_bulid.webp" alt="Sql" loading="lazy" src="./src/placeholder.png"
+                      class="img-fluid" style="object-fit: cover; height: 100%; width: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center flex-column w-75">
+                    <h5 class="mb-2 fw-bold text-dark" id="skill_bulid_com">ประกอบคอมพิวเตอร์</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-m1" style="width: 45%"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+              </div>
+              <div class="col">
+                <!-- item -->
+                <div class="d-flex mb-3 align-items-center">
+                  <div
+                    class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
+                    style="width: 80px; height: 80px;">
+                    <img data-src="./src/skill/network.png" alt="Sql" loading="lazy" src="./src/placeholder.png"
+                      class="img-fluid" style="object-fit: cover; height: 100%; width: 100%;">
+                  </div>
+                  <div class="d-flex justify-content-center flex-column w-75">
+                    <h5 class="mb-2 fw-bold text-dark" id="skill_net">ระบบเครือข่ายอินเทอร์เน็ต</h5>
+                    <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                      aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-m1 " style="width: 45%"></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end item -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end sec 4 skill -->
+
+  <!-- sec5 portfolio -->
+  <section id="mywork">
+    <div class="container-fluid light">
+      <div class="container-sm py-5">
+        <h1 class="fw-bold text-center text-dark" id="portfolio_title">ผลงาน</h1>
+        <p class=" text-center text-secondary" id="portfolio_detail">ผลงานเหล่านี้เป็นผลงานที่เคยทำให้ผู้ว่าจ้าง
+          หวังว่าจะได้แสดงให้เห็นถึงความสามารถและคุณภาพของงานที่เคยทำ</p>
+
+        <div class="row mt-5">
+          <div class="text-center">
+            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current" id="portfolio_part1">
+              ด้านการออกแบบ</h4>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-sm-6 p-1">
+                <img data-src="./src/design/hin.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
+                  loading="lazy" alt="hin">
+              </div>
+              <div class="col-sm-6 p-1">
+                <img data-src="./src/design/langka.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
+                  loading="lazy" alt="langka">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 p-1">
+                <img data-src="./src/design/new.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
+                  loading="lazy" alt="sea">
+              </div>
+              <div class="col-sm-6 p-1">
+                <img data-src="./src/design/phutok.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
+                  loading="lazy" alt="phutok">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-1">
+            <img data-src="./src/design/waterfall.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="waterfall">
+          </div>
+          <!-- part2 -->
+          <div class="col-md-4 p-1">
+            <img data-src="./src/design/9-4-66.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="music">
+          </div>
+          <div class="col-md-4 p-1">
+            <img data-src="./src/design/17-5-66.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="music">
+          </div>
+          <div class="col-md-4 p-1">
+            <img data-src="./src/design/28-4-66.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="music">
+          </div>
+          <!-- part3 -->
+          <div class="col-md-4 p-1">
+            <img data-src="./src/design/flim.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="music">
+          </div>
+          <div class="col-md-4 p-1">
+            <img data-src="./src/design/somjeed.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="music">
+          </div>
+          <div class="col-md-4 p-1">
+            <img data-src="./src/design/pangping.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+              loading="lazy" alt="pangping">
+          </div>
+          <!-- web part -->
+          <div class="text-center my-5">
+            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold current" id="portfolio_part2">
+              ด้านการพัฒนาเว็บไซต์</h4>
+          </div>
+          <!-- web1 -->
+          <div class="col-sm-4 mb-4">
+            <div class="bg-white shadow rounded-4 overflow-hidden no_dark">
+              <img data-src="./src/web/village.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+                loading="lazy" alt="village">
+              <h5 class="fw-bold text-dark mt-3 text-center" id="web1">ศูนย์เรียนรู้ชุมชนจังหวัดบึงกาฬ</h5>
+              <p class=" text-dark mt-3 text-center" id="develop_by1">พัฒนาโดย</p>
+              <div class="d-flex mt-3 align-items-center justify-content-center w-100">
+                <img data-src="./src/web/php.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="php">
+                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
+                <img data-src="./src/web/bootstrap.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="bootstrap">
+                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
+                <img data-src="./src/web/sql.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="sql">
+              </div>
+              <div class="text-center my-4">
+                <a href="http://village-learning-center.rf.gd/" target="_blank"
+                  class="btn btn-primary bg-m1 rounded-5 fw-bold px-5"><i class="fa-solid fa-eye"></i>
+                  <span id="see1">เข้าชม</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- web2 -->
+          <div class="col-sm-4 mb-4">
+            <div class="bg-white shadow rounded-4 overflow-hidden no_dark">
+              <img data-src="./src/web/project.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+                loading="lazy" alt="project">
+              <h5 class="fw-bold text-dark mt-3 text-center" id="web2">ระบบบันทึกเวลาปฏิบัติงาน</h5>
+              <p class=" text-dark mt-3 text-center" id="develop_by2">พัฒนาโดย</p>
+              <div class="d-flex mt-3 align-items-center justify-content-center w-100">
+                <img data-src="./src/web/php.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="php">
+                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
+                <img data-src="./src/web/bootstrap.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="bootstrap">
+                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
+                <img data-src="./src/web/sql.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="sql">
+              </div>
+              <div class="text-center my-4">
+                <a href="http://time-ad-pj.rf.gd/Time-ad-PJ/landing.php" target="_blank"
+                  class="btn btn-primary bg-m1 rounded-5 fw-bold px-5"><i class="fa-solid fa-eye"></i>
+                  <span id="see2">เข้าชม</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- web3 -->
+          <div class="col-sm-4 mb-4">
+            <div class="bg-white shadow rounded-4 overflow-hidden no_dark">
+              <img data-src="./src/web/laptop.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
+                loading="lazy" alt="village">
+              <h5 class="fw-bold text-dark mt-3 text-center" id="web3">เว็บไซต์ขายโน๊ตบุ๊คออนไลน์</h5>
+              <p class=" text-dark mt-3 text-center" id="develop_by3">พัฒนาโดย</p>
+              <div class="d-flex mt-3 align-items-center justify-content-center w-100">
+                <img data-src="./src/web/php.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="php">
+                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
+                <img data-src="./src/web/bootstrap.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="bootstrap">
+                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
+                <img data-src="./src/web/sql.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
+                  alt="sql">
+              </div>
+              <div class="text-center my-4">
+                <a href="" class="btn btn-primary bg-m1 rounded-5 fw-bold px-5"><i class="fa-solid fa-eye"></i>
+                  <span id="see3">เข้าชม</span></a>
+              </div>
+            </div>
+          </div>
+          <!-- part3 -->
+          <div class="text-center my-5">
+            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold current" id="portfolio_part3">
+              เกียรติบัตร
+            </h4>
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/01.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/02.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/03.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/04.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/05.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/06.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/07.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+          <div class="col-md-3 mb-4">
+            <img data-src="./src/cer/08.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
+              loading="lazy" alt="cer">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- end sec5 portfolio -->
+
+  <!-- contact form -->
+  <section id="contact">
+    <div class="container-fluid bg-m1">
+      <div class="container-sm py-5 ">
+        <h1 class="fw-bold text-center text-light current" id="contact_title">ติดต่อ</h1>
+        <p class="text-light text-center current" id="contact_detail">
+          หากคุณสนในสามารถติดต่อได้โดยการให้ข้อมูลผ่านฟอร์มที่ปรากฏด้านล่างนี้</p>
+        <!-- form -->
+        <form id="contact_form" action="https://api.web3forms.com/submit" class="m-auto my-5 needs-validation"
+          style="max-width: 500px;" method="POST" novalidate>
+          <!-- title message -->
+          <input type="hidden" name="subject" value="มีข้อความจาก Portfolio">
+          <!-- api key -->
+          <input type="hidden" name="access_key" value="6ced7481-34c8-4e74-87b6-cfceb48ce7ab">
+          <!-- name measse -->
+          <input type="hidden" name="from_name" value="มีข้อความจาก Portfolio">
+
+          <div class="mb-3">
+            <label for="name_feild" class="form-label fw-bold text-light current" id="contact_name">ชื่อ -
+              นามสกุล</label>
+            <input type="text" class="form-control rounded-5" name="name" id="name_feild" required>
+          </div>
+          <div class="mb-3">
+            <label for="email_feild" id="contact_email"
+              class="form-label fw-bold text-light current">ที่อยู่อีเมลล์</label>
+            <input type="hidden" class="form-control rounded-5" id="" name="replyto" value="sadawutsunee.2885@gmail.com"
+              disabled>
+            <input type="email" class="form-control rounded-5" id="email_feild" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message_feild" class="form-label fw-bold text-light current"
+              id="contact_message">ข้อความ</label>
+            <textarea name="message" id="message_feild" rows="8" class="form-control rounded-4" required></textarea>
+          </div>
+          <div class="text-center mb-3">
+            <div id="h-captcha" class="h-captcha form-control rounded-4 mb-3 w-100" data-captcha="true"></div>
+            <button type="submit" class=" btn btn-light  fw-bold rounded-5 px-5 text-m1"><i
+                class="fa-solid fa-paper-plane"></i>
+              <span id="sent">ส่งข้อความ</span></button>
+          </div>
+        </form>
+        <!-- end form -->
+      </div>
+    </div>
+  </section>
+  <!-- End contact form -->
+
+  <!-- footer -->
+  <div class="container-fluid py-5 bg-m1">
+    <p class="m-0 fw-bold text-center text-light current" id="footer">ลิขสิทธิ์ © 2023 กฤษดา บุตนาม // ออกแบบ โดย กฤษดา
+      บุตนาม
+    </p>
+  </div>
+  <!-- end footer -->
+
+  <!-- recapcha -->
+  <script>
+    const form = document.getElementById('contact_form');
+    let caphas = document.getElementById('h-captcha');
+
+    form.addEventListener('submit', function (e) {
+
+      const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+      if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field");
+        caphas.classList.add('shake_horizontal');
+        setTimeout(() => {
+          caphas.classList.remove('shake_horizontal');
+        }, 1000);
+        return
+      }
+    });
+  </script>
+
+  <!-- form valid -->
+  <script>
+    (() => {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+
+        }, false)
+      })
+    })()
+  </script>
+
+  <!-- dark / light -->
+  <script src="./js/dark_light.js"></script>
+
+  <!-- lange switch -->
+  <script src="./js/switch.js"></script>
+
+  <!-- web3froms -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+  <!-- bootstrap -->
+  <script src="./module/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+
+  <!-- fontawesome -->
+  <script src="./module/fontawesome-free-6.4.0-web/js/all.min.js"></script>
+
+  <!-- loadlazy img -->
+  <script src="./js/loadlazy.js"></script>
+
+  <!-- no drag img -->
+  <script>
+    // Get all img elements
+    var images = document.getElementsByTagName("img");
+
+    // Iterate through each image and set draggable to false
+    for (var i = 0; i < images.length; i++) {
+      images[i].draggable = false;
+    }
+
+  </script>
+</body>
+
+</html>
