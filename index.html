@@ -19,7 +19,11 @@
   <meta name="author" content="Kitsada Butnam">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./module/bootstrap-5.3.0-dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- sweet -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="light">
@@ -104,8 +108,10 @@
               </a>
               <div class="collapse mt-3" id="collapseExample">
                 <div class="">
-                  <a href="" class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current"><img src="./src/thai_flag.svg" alt="thai_flag" class="img-fluid" style="width: 25px;"> TH</a>
-                  <a href="" class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current"><img src="./src/us_flag.svg" alt="us_flag" class="img-fluid" style="width: 25px;"> EN</a>
+                  <a href="" class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current"><img
+                      src="./src/thai_flag.svg" alt="thai_flag" class="img-fluid" style="width: 25px;"> TH</a>
+                  <a href="" class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current"><img
+                      src="./src/us_flag.svg" alt="us_flag" class="img-fluid" style="width: 25px;"> EN</a>
                 </div>
               </div>
 
@@ -811,6 +817,8 @@
           <input type="hidden" name="access_key" value="6ced7481-34c8-4e74-87b6-cfceb48ce7ab">
           <!-- name measse -->
           <input type="hidden" name="from_name" value="มีข้อความจาก Portfolio">
+          <!-- redirect -->
+          <input type="hidden" name="redirect" value="https://tukie.github.io/Kitsada-Portfolio/">
 
           <div class="mb-3">
             <label for="name_feild" class="form-label fw-bold text-light current" id="contact_name">ชื่อ -
@@ -888,12 +896,21 @@
           }
 
           form.classList.add('was-validated')
+          Swal.fire(
+            'Sent Success',
+            'You clicked the button!',
+            'success'
+          )
 
         }, false)
       })
     })()
+
+
   </script>
 
+
+  
   <!-- dark / light -->
   <script src="./js/dark_light.js"></script>
 
@@ -920,6 +937,10 @@
     }
 
   </script>
+
+
+
+
 </body>
 
 </html>
