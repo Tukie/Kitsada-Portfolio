@@ -182,7 +182,6 @@ function changeLocale(locale) {
     button_th.classList.remove("d-none");
 
 
-
   } else if (locale === "th") {
     // th
     nav_home.textContent = "หน้าหลัก";

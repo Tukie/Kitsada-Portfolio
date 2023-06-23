@@ -104,8 +104,6 @@ function light_mode() {
   });
 }
 
-
-
 // switch check
 let isDarkMode = false;
 let dark_light = document.getElementById('dark_light');
