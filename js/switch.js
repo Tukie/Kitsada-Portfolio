@@ -1,6 +1,8 @@
 // Get the button element
 var button_en = document.getElementById("switch_en");
+var button_en2 = document.getElementById("switch_en2");
 var button_th = document.getElementById("switch_th");
+var button_th2 = document.getElementById("switch_th2");
 
 //  nav
 let nav_home = document.getElementById("nav_home");
@@ -174,8 +176,13 @@ function changeLocale(locale) {
     footer.textContent =
       "Copyright © 2023 by Kitsada Butnam // Designed by Kitsada Butnam";
 
+    button_en2.classList.add("d-none");
     button_en.classList.add("d-none");
+    button_th2.classList.remove("d-none");
     button_th.classList.remove("d-none");
+
+
+
   } else if (locale === "th") {
     // th
     nav_home.textContent = "หน้าหลัก";
@@ -198,7 +205,8 @@ function changeLocale(locale) {
     nameLastLabel.textContent = "ประวัติส่วนตัว";
     nameLast.textContent = "นายกฤษดา บุตนาม";
     addressLabel.textContent = "ที่อยู่";
-    address.textContent = "52 หมู่ 8 บ.นาสิงห์ ต.นาสิงห์ อ.ศรีวิไล จ.บึงกาฬ 38210";
+    address.textContent =
+      "52 หมู่ 8 บ.นาสิงห์ ต.นาสิงห์ อ.ศรีวิไล จ.บึงกาฬ 38210";
     telLabel.textContent = "เบอร์โทรศัพท์";
     emailLabel.textContent = "อีเมลล์";
     lineLabel.textContent = "ไลน์ไอดี";
@@ -237,7 +245,8 @@ function changeLocale(locale) {
 
     // portfolio
     portfolioTitle.textContent = "ผลงาน";
-    portfolioDetail.textContent ="ผลงานเหล่านี้เป็นผลงานที่เคยทำให้ผู้ว่าจ้าง หวังว่าจะได้แสดงให้เห็นถึงความสามารถและคุณภาพของงานที่เคยทำ";
+    portfolioDetail.textContent =
+      "ผลงานเหล่านี้เป็นผลงานที่เคยทำให้ผู้ว่าจ้าง หวังว่าจะได้แสดงให้เห็นถึงความสามารถและคุณภาพของงานที่เคยทำ";
     portfolioPart1.textContent = "ด้านการออกแบบ";
     portfolioPart2.textContent = "ด้านการพัฒนาเว็บไซต์";
     web1.textContent = "ศูนย์เรียนรู้ชุมชนจังหวัดบึงกาฬ";
@@ -264,7 +273,9 @@ function changeLocale(locale) {
     footer.textContent =
       "ลิขสิทธิ์ © 2023 กฤษดา บุตนาม // ออกแบบ โดย กฤษดา บุตนาม";
 
+    button_en2.classList.remove("d-none");
     button_en.classList.remove("d-none");
+    button_th2.classList.add("d-none");
     button_th.classList.add("d-none");
   }
 }

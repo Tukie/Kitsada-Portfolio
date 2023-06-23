@@ -109,15 +109,18 @@ function light_mode() {
 // switch check
 let isDarkMode = false;
 let dark_light = document.getElementById('dark_light');
+let dark_light2 = document.getElementById('dark_light2');
 
 function toggleMode() {
   if (isDarkMode) {
     light_mode();
     isDarkMode = false;
     dark_light.innerHTML = '<i class="text-m1 fa-solid fa-moon"></i>'
+    dark_light2.innerHTML = '<i class="text-m1 fa-solid fa-moon"></i>'
 } else {
     dark_mode();
     isDarkMode = true;
     dark_light.innerHTML = '<i class="text-light fa-solid fa-sun"></i>'
+    dark_light2.innerHTML = '<i class="text-light fa-solid fa-sun"></i>'
   }
 }

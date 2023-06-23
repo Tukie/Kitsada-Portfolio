@@ -28,10 +28,26 @@
 
 <body class="light">
 
+
   <!-- navbar -->
   <nav class="navbar bg_nav navbar-expand-lg position-sticky sticky-top shadow-sm">
     <div class="container-sm ">
       <a class="navbar-brand fw-bold text-m1" href="#" id="nav_title">KITSADA</a>
+
+      <div class="switch_all_sm d-lg-none position-fixed  ms-5" style="z-index: 9999;">
+        <div class="ms-5">
+          <button id="switch_en2" class="btn bg-m1 rounded-5 px-4 text-light current"
+            onclick="changeLocale('en')">EN</button>
+          <button id="switch_th2" class="d-none btn bg-m1 rounded-5 px-4 text-light current"
+            onclick="changeLocale('th')">TH</button>
+
+          <!-- light / Dark -->
+          <button id="dark_light2" class="btn btn-lg" onclick="toggleMode()" style="width: 50px;">
+            <i class="text-m1 fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -66,21 +82,21 @@
         </ul>
         <div class="d-flex justify-content-center align-items-center">
           <!-- EN TH -->
-          <button id="switch_en" class="btn bg-m1 rounded-5 px-4 text-light current"
-            onclick="changeLocale('en')">EN</button>
-          <button id="switch_th" class=" d-none btn bg-m1 rounded-5 px-4 text-light current"
-            onclick="changeLocale('th')">TH</button>
+          <div class="switch_all_none">
+            <button id="switch_en" class="btn bg-m1 rounded-5 px-4 text-light current"
+              onclick="changeLocale('en')">EN</button>
+            <button id="switch_th" class="d-none btn bg-m1 rounded-5 px-4 text-light current"
+              onclick="changeLocale('th')">TH</button>
 
-          <!-- light / Dark -->
-          <div>
+            <!-- light / Dark -->
             <button id="dark_light" class="btn btn-lg" onclick="toggleMode()" style="width: 50px;">
               <i class="text-m1 fa-solid fa-moon"></i>
             </button>
           </div>
         </div>
+
       </div>
-    </div>
-    </div>
+
   </nav>
   </div>
 
@@ -98,7 +114,7 @@
               <h1 class="fw-bold display-1 text-dark" id="myname" style="font-weight: 1000!important;">
                 นายกฤษดา<br>บุตนาม
               </h1>
-              
+
               <a class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current" data-bs-toggle="collapse"
                 href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                 <i class="fa-solid fa-download"></i>
@@ -695,17 +711,14 @@
               <h5 class="fw-bold text-dark mt-3 text-center" id="web1">ศูนย์เรียนรู้ชุมชนจังหวัดบึงกาฬ</h5>
               <p class=" text-dark mt-3 text-center" id="develop_by1">พัฒนาโดย</p>
               <div class="d-flex mt-3 align-items-center justify-content-center w-100">
-                <img data-src="./src/web/php.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
-                  alt="php">
+                <img data-src="./src/web/nextjs-icon.svg" src="./src/placeholder.png"
+                  class="img-fluid bg-body rounded-circle" style="width: 40px;" loading="lazy" alt="next">
                 <i class="fa-solid fa-plus mx-3 text-secondary"></i>
                 <img data-src="./src/web/bootstrap.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
                   alt="bootstrap">
-                <i class="fa-solid fa-plus mx-3 text-secondary"></i>
-                <img data-src="./src/web/sql.png" src="./src/placeholder.png" class="img-fluid" loading="lazy"
-                  alt="sql">
               </div>
               <div class="text-center my-4">
-                <a href="http://village-learning-center.rf.gd/" target="_blank"
+                <a href="https://bung-kan-community-learning-center.vercel.app/" target="_blank"
                   class="btn btn-primary bg-m1 rounded-5 fw-bold px-5"><i class="fa-solid fa-eye"></i>
                   <span id="see1">เข้าชม</span></a>
               </div>
@@ -889,25 +902,34 @@
 
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
       const forms = document.querySelectorAll('.needs-validation')
-
+      let Isvalid = true;
       // Loop over them and prevent submission
       Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
-          }
+            Isvalid = false
+          } else {
+            Isvalid = true
+            setTimeout(() => {
+              Swal.fire(
+                'The message has been sent.',
+                '',
+                'success'
+              )
+            }, 1000);
+            forms.reset();
 
+
+          }
           form.classList.add('was-validated')
-          Swal.fire(
-            'Sent successfully',
-            '',
-            'success'
-          )
+
 
         }, false)
       })
     })()
+
 
 
   </script>
