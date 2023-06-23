@@ -118,6 +118,6 @@ function toggleMode() {
 } else {
     dark_mode();
     isDarkMode = true;
-    dark_light.innerHTML = '<i class="text-m1 fa-solid fa-sun"></i>'
+    dark_light.innerHTML = '<i class="text-light fa-solid fa-sun"></i>'
   }
 }
