@@ -24,9 +24,15 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- sweet -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="light">
+  <!-- go to top -->
+  <button id="scroll_top" class="btn btn-primary bg-m1 border border-light position-fixed bottom-0 end-0 m-3">
+    <i class="fa-solid fa-caret-up rounded-circle"></i>
+  </button>
 
 
   <!-- navbar -->
@@ -34,6 +40,7 @@
     <div class="container-sm ">
       <a class="navbar-brand fw-bold text-m1" href="#" id="nav_title">KITSADA</a>
 
+      <!-- switc in small display -->
       <div class="switch_all_sm d-lg-none position-fixed  ms-5" style="z-index: 9999;">
         <div class="ms-5">
           <button id="switch_en2" class="btn bg-m1 rounded-5 px-4 text-light current"
@@ -47,6 +54,7 @@
           </button>
         </div>
       </div>
+      <!-- end -->
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,17 +114,20 @@
   <!-- sec1 Banner-->
   <section id="home">
     <div class="container-fluid light" style="height:80vh">
-      <div class="container-sm h-100">
+      <div class="container-sm h-100 ">
         <div class="d-flex justify-content-center h-100 mt-2 mt-lg-0">
           <div class="row m-0">
             <div class="col-lg-6 text-center text-lg-start align-self-center">
-              <p class="m-0 text-secondary" id="welcome">ยินดีต้อนรับ สู่เว็บไซต์สะสมผลงาน</p>
-              <h1 class="fw-bold display-1 text-dark" id="myname" style="font-weight: 1000!important;">
+              <p class="m-0 text-secondary animate__animated animate__fadeInDown" id="welcome">ยินดีต้อนรับ
+                สู่เว็บไซต์สะสมผลงาน</p>
+              <h1 class="fw-bold display-1 text-dark animate__animated animate__fadeIn animate__slow" id="myname"
+                style="font-weight: 1000!important;">
                 นายกฤษดา<br>บุตนาม
               </h1>
 
-              <a class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current" data-bs-toggle="collapse"
-                href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-lg text-light bg-m1 fw-bold mt-2 rounded-5 px-5 current animate__animated animate__fadeInUp animate__slow"
+                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                aria-controls="collapseExample">
                 <i class="fa-solid fa-download"></i>
                 <span id="resume">เรซูเม</span>
               </a>
@@ -130,13 +141,14 @@
                       alt="us_flag" class="img-fluid" style="width: 25px;"> EN</a>
                 </div>
               </div>
-
-
             </div>
 
-            <div class="col-lg-6 align-self-center">
-              <img data-src="./src/profile.png" src="./src/placeholder.png" alt="profile" class="img-fluid"
-                loading="lazy" />
+            <div class="col-lg-6 align-self-center ">
+              <div class="d-flex align-items-center justify-content-center animate__animated animate__fadeIn">
+                <img data-src="./src/profile.png" src="./src/placeholder.png" alt="profile"
+                  class="img-fluid rounded-5 shadow-lg w-75" loading="lazy" />
+              </div>
+
             </div>
           </div>
         </div>
@@ -150,18 +162,21 @@
   <section id="about">
     <div class="container-fluid bg-m1">
       <div class="container-sm py-5">
-        <h1 class="fw-bold text-center text-light current" id="about_title">เกี่ยวกับ</h1>
-        <p class="text-light text-center current" id="about_detail">
+        <h1 class="fw-bold text-center text-light current animate_stich animate__animated  " id="about_title">เกี่ยวกับ
+        </h1>
+        <p class="text-light text-center current animate_stich animate__animated " id="about_detail">
           ข้อมูลเบื้องต้นเกี่ยวกับประวัติส่วนตัวและประวัติการศึกษา</p>
         <div class="row mt-5">
           <div class="col-md-6 mb-4 ">
             <div class="rounded-5 bg-light p-5">
-              <h3 class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current" id="his_title">ประวัติส่วนตัว
+              <h3
+                class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current animate_stich animate__animated "
+                id="his_title">ประวัติส่วนตัว
               </h3>
 
               <!-- list -->
               <!-- item1 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="d-block">
                   <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                     style="width: 60px; height: 60px;">
@@ -174,7 +189,7 @@
                 </div>
               </div>
               <!-- item2 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="d-block">
                   <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                     style="width: 60px; height: 60px;">
@@ -187,7 +202,7 @@
                 </div>
               </div>
               <!-- item3 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                   style="width: 60px; height: 60px;">
                   <i class="fa-solid fa-phone fs-3"></i>
@@ -198,7 +213,7 @@
                 </div>
               </div>
               <!-- item4 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="d-block">
                   <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                     style="width: 60px; height: 60px;">
@@ -211,7 +226,7 @@
                 </div>
               </div>
               <!-- item5 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                   style="width: 60px; height: 60px;">
                   <i class="fa-brands fa-line fs-3"></i>
@@ -222,7 +237,7 @@
                 </div>
               </div>
               <!-- item6 -->
-              <div class="d-flex align-items-center">
+              <div class="d-flex align-items-center animate_stich animate__animated">
                 <div class="d-block">
                   <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                     style="width: 60px; height: 60px;">
@@ -240,12 +255,14 @@
           </div>
           <div class="col-md-6 mb-4">
             <div class="rounded-5 bg-light p-5 h-100">
-              <h3 class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current" id="his_gradu">ประวัติการศึกษา
+              <h3
+                class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current animate_stich animate__animated"
+                id="his_gradu">ประวัติการศึกษา
               </h3>
 
               <!-- list -->
               <!-- item1 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                   style="width: 80px; height: 80px;">
                   <i class="fa-solid fa-school fs-1"></i>
@@ -257,7 +274,7 @@
                 </div>
               </div>
               <!-- item2 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                   style="width: 80px; height: 80px;">
                   <i class="fa-solid fa-school fs-1"></i>
@@ -269,7 +286,7 @@
                 </div>
               </div>
               <!-- item3 -->
-              <div class="d-flex  align-items-center">
+              <div class="d-flex  align-items-center animate_stich animate__animated">
                 <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                   style="width: 80px; height: 80px;">
                   <i class="fa-solid fa-graduation-cap fs-1"></i>
@@ -292,23 +309,27 @@
   <section id="workExp">
     <div class="container-fluid light">
       <div class="container-sm py-5">
-        <h1 class="fw-bold text-center text-dark" id="workEXP_title">ประสบการณ์ทำงาน</h1>
-        <p class=" text-center text-secondary" id="workEXP_detail">ข้อมูลเบื้องต้นเกี่ยวกับประวัติการทำงาน</p>
+        <h1 class="fw-bold text-center text-dark animate_stich animate__animated" id="workEXP_title">ประสบการณ์ทำงาน
+        </h1>
+        <p class=" text-center text-secondary animate_stich animate__animated" id="workEXP_detail">
+          ข้อมูลเบื้องต้นเกี่ยวกับประวัติการทำงาน</p>
         <div class="row mt-5">
           <!-- img -->
-          <div class="col-md-6 mb-4 ">
+          <div class="col-lg-6 mb-4 animate_stich animate__animated">
             <img data-src="./src/workExp.png" src="./src/placeholder.png" alt="workEXP" loading="lazy"
-              class="img-fluid rounded-5 overflow-hidden shadow">
+              class="img-fluid rounded-5 overflow-hidden shadow ">
           </div>
-          <div class="col-md-6 mb-4 ">
+          <div class="col-lg-6 mb-4 ">
             <div class="rounded-5 bg-white no_dark p-5 shadow h-100">
-              <h4 class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current " id="workEXP_date">1 เมษายน
+              <h4
+                class="bg-m1 p-3 rounded-5 text-light text-center fw-bold mb-4 current animate_stich animate__animated"
+                id="workEXP_date">1 เมษายน
                 2565 - 17
                 มิถุนายน 2565</h4>
 
               <!-- list -->
               <!-- item1 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="d-block">
                   <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                     style="width: 80px; height: 80px;">
@@ -322,7 +343,7 @@
                 </div>
               </div>
               <!-- item2 -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3"
                   style="width: 80px; height: 80px;">
                   <i class="fa-solid fa-user-tie fs-1"></i>
@@ -333,7 +354,8 @@
 
                 </div>
               </div>
-              <p id="job_describe" class="text-dark"><span class="fw-bold ">ลักษณะงานที่ทำ : </span>งานให้บริการลูกค้า
+              <p id="job_describe" class="text-dark animate_stich animate__animated"><span
+                  class="fw-bold ">ลักษณะงานที่ทำ : </span>งานให้บริการลูกค้า
                 เปิดบัญชี
                 ทําบัตร ATM บัตร A-GEN บัตรทอง
                 ทําแอพพลิเคชั่น A-Mobile แอพพลิเคชั่น Mobile Banking ของธนาคาร
@@ -357,13 +379,16 @@
   <section id="skill">
     <div class="container-fluid bg-m1">
       <div class="container-sm py-5">
-        <h1 class="fw-bold text-center text-light current" id="skill_title">ทักษะความสามารถ</h1>
-        <p class=" text-center text-light current" id="skill_detail">
+        <h1 class="fw-bold text-center text-light current animate_stich animate__animated" id="skill_title">
+          ทักษะความสามารถ</h1>
+        <p class=" text-center text-light current animate_stich animate__animated" id="skill_detail">
           ทักษะความสามารถที่มีและสามารถนำไปปรับใช้ในการทำงานได้
         </p>
         <div class="bg-light rounded-5 p-5 mt-5">
           <div class="text-center">
-            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current" id="skill_part1">
+            <h4
+              class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current animate_stich animate__animated"
+              id="skill_part1">
               ซอฟต์แวร์</h4>
           </div>
 
@@ -371,7 +396,7 @@
           <div class="row mt-4">
             <div class="col">
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -388,7 +413,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -405,7 +430,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -422,7 +447,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -442,7 +467,7 @@
             <!-- col 2 -->
             <div class="col">
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -459,7 +484,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -476,7 +501,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -493,7 +518,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -513,7 +538,7 @@
             <!-- col 3 -->
             <div class="col">
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -530,7 +555,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -547,7 +572,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -555,7 +580,7 @@
                     class="img-fluid">
                 </div>
                 <div class="d-flex justify-content-center flex-column w-75">
-                  <h5 class="mb-2 fw-bold text-dark">CSS</h5>
+                  <h5 class="mb-2 fw-bold text-dark">PHP</h5>
                   <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100"
                     aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar bg-m1" style="width: 65%"></div>
@@ -564,7 +589,7 @@
               </div>
               <!-- end item -->
               <!-- item -->
-              <div class="d-flex mb-3 align-items-center">
+              <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                 <div
                   class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                   style="width: 80px; height: 80px;">
@@ -582,14 +607,16 @@
               <!-- end item -->
             </div>
             <div class="text-center mt-4">
-              <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current" id="skill_part2">
+              <h4
+                class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current animate_stich animate__animated"
+                id="skill_part2">
                 ฮาร์ดแวร์
               </h4>
             </div>
             <div class="row mt-4">
               <div class="col">
                 <!-- item -->
-                <div class="d-flex mb-3 align-items-center">
+                <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                   <div
                     class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                     style="width: 80px; height: 80px;">
@@ -608,7 +635,7 @@
               </div>
               <div class="col">
                 <!-- item -->
-                <div class="d-flex mb-3 align-items-center">
+                <div class="d-flex mb-3 align-items-center animate_stich animate__animated ">
                   <div
                     class="bg-m2 me-3 text-m1 d-flex align-items-center justify-content-center rounded-3 overflow-hidden"
                     style="width: 80px; height: 80px;">
@@ -637,74 +664,79 @@
   <section id="mywork">
     <div class="container-fluid light">
       <div class="container-sm py-5">
-        <h1 class="fw-bold text-center text-dark" id="portfolio_title">ผลงาน</h1>
-        <p class=" text-center text-secondary" id="portfolio_detail">ผลงานเหล่านี้เป็นผลงานที่เคยทำให้ผู้ว่าจ้าง
+        <h1 class="fw-bold text-center text-dark animate_stich animate__animated" id="portfolio_title">ผลงาน</h1>
+        <p class=" text-center text-secondary animate_stich animate__animated" id="portfolio_detail">
+          ผลงานเหล่านี้เป็นผลงานที่เคยทำให้ผู้ว่าจ้าง
           หวังว่าจะได้แสดงให้เห็นถึงความสามารถและคุณภาพของงานที่เคยทำ</p>
 
         <div class="row mt-5">
           <div class="text-center">
-            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current" id="portfolio_part1">
+            <h4
+              class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold mb-4 current animate_stich animate__animated"
+              id="portfolio_part1">
               ด้านการออกแบบ</h4>
           </div>
           <div class="col-md-6">
             <div class="row">
               <div class="col-sm-6 p-1">
-                <img data-src="./src/design/hin.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
-                  loading="lazy" alt="hin">
+                <img data-src="./src/design/hin.png" src="./src/placeholder.png"
+                  class="img-fluid w-100 h-100 animate_stich animate__animated " loading="lazy" alt="hin">
               </div>
               <div class="col-sm-6 p-1">
-                <img data-src="./src/design/langka.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
-                  loading="lazy" alt="langka">
+                <img data-src="./src/design/langka.png" src="./src/placeholder.png"
+                  class="img-fluid w-100 h-100 animate_stich animate__animated " loading="lazy" alt="langka">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 p-1">
-                <img data-src="./src/design/new.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
-                  loading="lazy" alt="sea">
+                <img data-src="./src/design/new.png" src="./src/placeholder.png"
+                  class="img-fluid w-100 h-100 animate_stich animate__animated " loading="lazy" alt="sea">
               </div>
               <div class="col-sm-6 p-1">
-                <img data-src="./src/design/phutok.png" src="./src/placeholder.png" class="img-fluid w-100 h-100 "
-                  loading="lazy" alt="phutok">
+                <img data-src="./src/design/phutok.png" src="./src/placeholder.png"
+                  class="img-fluid w-100 h-100 animate_stich animate__animated " loading="lazy" alt="phutok">
               </div>
             </div>
           </div>
           <div class="col-md-6 p-1">
-            <img data-src="./src/design/waterfall.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="waterfall">
+            <img data-src="./src/design/waterfall.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="waterfall">
           </div>
           <!-- part2 -->
           <div class="col-md-4 p-1">
-            <img data-src="./src/design/9-4-66.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="music">
+            <img data-src="./src/design/9-4-66.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="music">
           </div>
           <div class="col-md-4 p-1">
-            <img data-src="./src/design/17-5-66.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="music">
+            <img data-src="./src/design/17-5-66.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="music">
           </div>
           <div class="col-md-4 p-1">
-            <img data-src="./src/design/28-4-66.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="music">
+            <img data-src="./src/design/28-4-66.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="music">
           </div>
           <!-- part3 -->
           <div class="col-md-4 p-1">
-            <img data-src="./src/design/flim.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="music">
+            <img data-src="./src/design/flim.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="music">
           </div>
           <div class="col-md-4 p-1">
-            <img data-src="./src/design/somjeed.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="music">
+            <img data-src="./src/design/somjeed.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="music">
           </div>
           <div class="col-md-4 p-1">
-            <img data-src="./src/design/pangping.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
-              loading="lazy" alt="pangping">
+            <img data-src="./src/design/pangping.png" src="./src/placeholder.png"
+              class="img-fluid w-100 h-100 animate_stich animate__animated" loading="lazy" alt="pangping">
           </div>
           <!-- web part -->
           <div class="text-center my-5">
-            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold current" id="portfolio_part2">
+            <h4
+              class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold current animate_stich animate__animated"
+              id="portfolio_part2">
               ด้านการพัฒนาเว็บไซต์</h4>
           </div>
           <!-- web1 -->
-          <div class="col-sm-4 mb-4">
+          <div class="col-sm-4 mb-4 animate_stich animate__animated">
             <div class="bg-white shadow rounded-4 overflow-hidden no_dark">
               <img data-src="./src/web/village.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
                 loading="lazy" alt="village">
@@ -725,7 +757,7 @@
             </div>
           </div>
           <!-- web2 -->
-          <div class="col-sm-4 mb-4">
+          <div class="col-sm-4 mb-4 animate_stich animate__animated">
             <div class="bg-white shadow rounded-4 overflow-hidden no_dark">
               <img data-src="./src/web/project.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
                 loading="lazy" alt="project">
@@ -749,7 +781,7 @@
             </div>
           </div>
           <!-- web3 -->
-          <div class="col-sm-4 mb-4">
+          <div class="col-sm-4 mb-4 animate_stich animate__animated">
             <div class="bg-white shadow rounded-4 overflow-hidden no_dark">
               <img data-src="./src/web/laptop.png" src="./src/placeholder.png" class="img-fluid w-100 h-100"
                 loading="lazy" alt="village">
@@ -773,41 +805,43 @@
           </div>
           <!-- part3 -->
           <div class="text-center my-5">
-            <h4 class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold current" id="portfolio_part3">
+            <h4
+              class="bg-m1 py-3 px-5 d-inline-block rounded-5 text-light fw-bold current animate_stich animate__animated"
+              id="portfolio_part3">
               เกียรติบัตร
             </h4>
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/01.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/01.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/02.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/02.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/03.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/03.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/04.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/04.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/05.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/05.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/06.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/06.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/07.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/07.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
           <div class="col-md-3 mb-4">
-            <img data-src="./src/cer/08.png" src="./src/placeholder.png" class="img-fluid shadow rounded-4 zoom_lg"
-              loading="lazy" alt="cer">
+            <img data-src="./src/cer/08.png" src="./src/placeholder.png"
+              class="img-fluid shadow rounded-4 zoom_lg animate_stich animate__animated" loading="lazy" alt="cer">
           </div>
         </div>
       </div>
@@ -819,14 +853,16 @@
 
   <!-- contact form -->
   <section id="contact">
-    <div class="container-fluid bg-m1">
+    <div class="container-fluid bg-m1 ">
       <div class="container-sm py-5 ">
-        <h1 class="fw-bold text-center text-light current" id="contact_title">ติดต่อ</h1>
-        <p class="text-light text-center current" id="contact_detail">
+        <h1 class="fw-bold text-center text-light current animate_stich animate__animated" id="contact_title">ติดต่อ
+        </h1>
+        <p class="text-light text-center current animate_stich animate__animated" id="contact_detail">
           หากคุณสนในสามารถติดต่อได้โดยการให้ข้อมูลผ่านฟอร์มที่ปรากฏด้านล่างนี้</p>
         <!-- form -->
-        <form id="contact_form" action="https://api.web3forms.com/submit" class="m-auto my-5 needs-validation"
-          style="max-width: 500px;" method="POST" novalidate>
+        <form id="contact_form" action="https://api.web3forms.com/submit"
+          class="m-auto my-5 needs-validation animate_stich animate__animated" style="max-width: 500px;" method="POST"
+          novalidate>
           <!-- title message -->
           <input type="hidden" name="subject" value="มีข้อความจาก Portfolio">
           <!-- api key -->
@@ -962,7 +998,29 @@
 
   </script>
 
+  <!-- scrol to top -->
+  <script>
+    var scroll_top = document.getElementById("scroll_top");
 
+    window.addEventListener("scroll", function () {
+      // Show button when user scrolls down 20px from the top
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scroll_top.style.opacity = "100";
+      } else {
+        scroll_top.style.opacity = "0";
+      }
+    });
+
+    scroll_top.addEventListener("click", function () {
+      // Scroll to top of the page
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    });
+
+  </script>
+
+  <!-- animate -->
+  <script src="./js/animate.js"></script>
 
 
 </body>
