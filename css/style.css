@@ -21,6 +21,11 @@
   color: #6e41fe !important;
 }
 
+.animate_stich{
+  opacity: 0;
+}
+
+
 .btn {
   transition: 0.3s !important;
 }
@@ -146,12 +151,11 @@ img:hover {
   top: 3px;
 }
 
-
-@media only screen  and (min-width: 991px) {
+@media only screen and (min-width: 991px) {
   .switch_all_sm {
-   display: none!important;
+    display: none !important;
   }
-  .switch_all_none{
+  .switch_all_none {
     display: block;
   }
 }
