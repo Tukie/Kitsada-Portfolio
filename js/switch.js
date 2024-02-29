@@ -58,6 +58,12 @@ let skillPart2 = document.getElementById("skill_part2");
 let skillBulidCom = document.getElementById("skill_bulid_com");
 let skillNet = document.getElementById("skill_net");
 
+// Skill Level
+let skillLevelUpperIntermediate =
+  document.getElementsByClassName("Upper_Intermediate");
+let skillLevelMedium = document.getElementsByClassName("medium");
+let skillLevelHeight = document.getElementsByClassName("height");
+
 // portfolio
 let portfolioTitle = document.getElementById("portfolio_title");
 let portfolioDetail = document.getElementById("portfolio_detail");
@@ -146,6 +152,21 @@ function changeLocale(locale) {
     skillBulidCom.textContent = "PC Building";
     skillNet.textContent = "Network Analytics";
 
+    for (let index = 0; index < skillLevelUpperIntermediate.length; index++) {
+      const element = skillLevelUpperIntermediate[index];
+      element.textContent = "Upper Intermediate";
+    }
+    
+    for (let index = 0; index < skillLevelMedium.length; index++) {
+      const element = skillLevelMedium[index];
+      element.textContent = "Intermediate";
+    }
+
+    for (let index = 0; index < skillLevelHeight.length; index++) {
+      const element = skillLevelHeight[index];
+      element.textContent = "Advanced";
+    }
+
     // portfolio
     portfolioTitle.textContent = "Work Samples";
     portfolioDetail.textContent =
@@ -154,13 +175,10 @@ function changeLocale(locale) {
     portfolioPart2.textContent = "Web development";
     web1.textContent = "Community Learning Center";
     web2.textContent = "Time attendance system";
-    web3.textContent = "Laptop Shop";
     developBy1.textContent = "Develop By";
     developBy2.textContent = "Develop By";
-    developBy3.textContent = "Develop By";
     see1.textContent = "See";
     see2.textContent = "See";
-    see3.textContent = "See";
     portfolioPart3.textContent = "Certificates";
 
     // contact
@@ -174,14 +192,12 @@ function changeLocale(locale) {
 
     // footer
     footer.textContent =
-      "Copyright © 2023 by Kitsada Butnam // Designed by Kitsada Butnam";
+      "Copyright © 2024 by Kitsada Butnam // Designed by Kitsada Butnam";
 
     button_en2.classList.add("d-none");
     button_en.classList.add("d-none");
     button_th2.classList.remove("d-none");
     button_th.classList.remove("d-none");
-
-
   } else if (locale === "th") {
     // th
     nav_home.textContent = "หน้าหลัก";
@@ -242,6 +258,21 @@ function changeLocale(locale) {
     skillBulidCom.textContent = "ประกอบคอมพิวเตอร์";
     skillNet.textContent = "ระบบเครือข่ายอินเทอร์เน็ต";
 
+    for (let index = 0; index < skillLevelUpperIntermediate.length; index++) {
+      const element = skillLevelUpperIntermediate[index];
+      element.textContent = "ค่อนข้างสูง";
+    }
+
+    for (let index = 0; index < skillLevelMedium.length; index++) {
+      const element = skillLevelMedium[index];
+      element.textContent = "ปานกลาง";
+    }
+
+    for (let index = 0; index < skillLevelHeight.length; index++) {
+      const element = skillLevelHeight[index];
+      element.textContent = "สูง";
+    }
+
     // portfolio
     portfolioTitle.textContent = "ผลงาน";
     portfolioDetail.textContent =
@@ -250,13 +281,10 @@ function changeLocale(locale) {
     portfolioPart2.textContent = "ด้านการพัฒนาเว็บไซต์";
     web1.textContent = "ศูนย์เรียนรู้ชุมชนจังหวัดบึงกาฬ";
     web2.textContent = "ระบบเครือข่ายอินเทอร์เน็ต";
-    web3.textContent = "เว็บไซต์ขายโน๊ตบุ๊คออนไลน์";
     developBy1.textContent = "พัฒนาโดย";
     developBy2.textContent = "พัฒนาโดย";
-    developBy3.textContent = "พัฒนาโดย";
     see1.textContent = "เข้าชม";
     see2.textContent = "เข้าชม";
-    see3.textContent = "เข้าชม";
     portfolioPart3.textContent = "เกียรติบัตร";
 
     // contact
@@ -270,7 +298,7 @@ function changeLocale(locale) {
 
     // footer
     footer.textContent =
-      "ลิขสิทธิ์ © 2023 กฤษดา บุตนาม // ออกแบบ โดย กฤษดา บุตนาม";
+      "ลิขสิทธิ์ © 2024 กฤษดา บุตนาม // ออกแบบ โดย กฤษดา บุตนาม";
 
     button_en2.classList.remove("d-none");
     button_en.classList.remove("d-none");
